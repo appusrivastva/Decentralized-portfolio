@@ -1,12 +1,28 @@
-# React + Vite
+# 💼 Blockchain Portfolio DApp
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A decentralized portfolio application (DApp) powered by **Ethereum smart contracts**, built using **Web3.js** and integrated with **MetaMask** for secure wallet-based interactions. This DApp allows users to connect their wallets and view or manage a blockchain-based portfolio in a transparent and decentralized environment.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🚀 Features
 
-## Expanding the ESLint configuration
+- 🔐 **MetaMask Integration** for secure user authentication via Ethereum wallets.
+- ⛓️ **Smart Contract** interaction for decentralized portfolio data management.
+- 🌐 **Web3.js** integration for seamless communication between frontend and the blockchain.
+- 📄 Store portfolio data on the Ethereum blockchain (e.g., projects, skills, social links).
+- 💻 Responsive UI
 
-If you are developing a production application, we recommend using TypeScript and enable type-aware lint rules. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+## 🛠️ Tech Stack
+
+| Technology       | Description                            |
+|------------------|----------------------------------------|
+| Web3.js          | Ethereum JavaScript API                |
+| Solidity         | Smart contract programming language    |
+| MetaMask         | Ethereum wallet for browser            |
+| React.js         | Frontend framework                     |
+| Remix            | Smart contract development and testing |
+
+---
+
