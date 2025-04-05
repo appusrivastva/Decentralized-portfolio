@@ -10,8 +10,9 @@ const Wallet = ({ saveState }) => {
     try {
       const web3 = new Web3(window.ethereum);
       await window.ethereum.request({ method: "eth_requestAccounts" });
-      const contractAddress = import.meta.env.REACT_APP_CONTRACT_ADDRESS;
-      console.log(import.meta.env);
+      const contractAddress = import.meta.env.VITE_APP_CONTRACT_ADDRESS;
+      console.log({ contractAddress });
+
       const account = await web3.eth.getAccounts();
       const contract = new web3.eth.Contract(ABI, contractAddress);
       setConnected(false);
