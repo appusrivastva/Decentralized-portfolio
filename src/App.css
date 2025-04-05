@@ -1,0 +1,81 @@
+/* Centered container for all content */
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+/* Make the layout responsive on smaller screens */
+@media (max-width: 1024px) {
+  #root {
+    padding: 1.5rem;
+  }
+}
+@media (max-width: 768px) {
+  #root {
+    padding: 1rem;
+  }
+}
+@media (max-width: 480px) {
+  #root {
+    padding: 0.5rem;
+  }
+}
+
+/* Logo styles */
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+/* Logo spin animation */
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+/* Card component responsiveness */
+.card {
+  padding: 2em;
+  margin: 1em auto;
+  max-width: 600px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  background-color: #f8f8f8;
+}
+
+/* Text helper class */
+.read-the-docs {
+  color: #888;
+  font-size: 0.9rem;
+}
+
+/* Example responsive section style for custom components */
+section {
+  margin-bottom: 2rem;
+  padding: 1rem;
+}
+
+@media (max-width: 768px) {
+  section {
+    padding: 0.5rem;
+  }
+}
