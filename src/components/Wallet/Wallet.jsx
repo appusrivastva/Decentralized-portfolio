@@ -11,12 +11,12 @@ const Wallet = ({ saveState }) => {
       const web3 = new Web3(window.ethereum);
       await window.ethereum.request({ method: "eth_requestAccounts" });
       const contractAddress = import.meta.env.VITE_APP_CONTRACT_ADDRESS;
-      console.log({ contractAddress });
+      // console.log({ contractAddress });
 
       const account = await web3.eth.getAccounts();
       const contract = new web3.eth.Contract(ABI, contractAddress);
       setConnected(false);
-      console.log(contract);
+      // console.log(contract);
       saveState({ web3: web3, contract: contract, account: account[0] });
     } catch (error) {
       alert("Please install Metamask");
