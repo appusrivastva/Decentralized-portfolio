@@ -14,6 +14,8 @@ const Wallet = ({ saveState }) => {
       // console.log({ contractAddress });
 
       const account = await web3.eth.getAccounts();
+
+      console.log(account[0]);
       const contract = new web3.eth.Contract(ABI, contractAddress);
       setConnected(false);
       // console.log(contract);
